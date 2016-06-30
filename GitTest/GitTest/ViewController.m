@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ShaPeng.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSLog(@"许二傻");
+    
+    ShaPeng * shaPeng = [[ShaPeng alloc]init];
+    shaPeng.name = @"万傻鹏";
+    NSLog(@"%@",shaPeng.name);
     
 }
 
